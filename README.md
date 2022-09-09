@@ -36,6 +36,8 @@ namoosori-react 강좌 전체 코스
 리액트 + 몹엑스 기초 강의 - 7-2강 React-Router 실습(1)
 리액트 + 몹엑스 기초 강의 - 7-3강 React-Router 실습(2)
 
+npm install -g yarn
+
 yarn create react-app hello-react
 yarn create react-app 1.props-exam
 yarn create react-app simple-counter
@@ -43,3 +45,9 @@ yarn create react-app simple-counter
 yarn start
 
 yarn add @material-ui/core
+
+https://www.youtube.com/c/namoosori
+
+https://www.youtube.com/playlist?list=PLOSNUO27qFbtYC5oRwJVsNavcPEI5uoiJ
+
+https://github.com/namoosori/reactwithmobx
