@@ -16,10 +16,10 @@ const styles = {
 class BookListItem extends Component {
     render(){
 
-        const { book, classes } = this.props;
+        const { book, classes, onSelectedBook } = this.props;
 
         return(
-            <ListItem>
+            <ListItem onClick = { () => onSelectedBook(book) } >
                 <Paper>
                     <Grid container spacing = {2}>
                         <Grid item>
