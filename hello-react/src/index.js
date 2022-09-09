@@ -4,11 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const title = React.createElement('h1',null,'JSX Test');
+const text = React.createElement('p',null,'Paragraph Text~');
+const container = React.createElement('div', null, [title, text]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>
+  container,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
