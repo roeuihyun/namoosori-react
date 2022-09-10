@@ -1,4 +1,4 @@
-import { observable, action, computed, makeObservable } from 'mobx';
+import { observable, action, computed, makeObservable, toJS } from 'mobx';
 
 class TodoStore {
 
@@ -7,12 +7,21 @@ class TodoStore {
     }
 
     @observable
-    _todo = { 
-        
-     } // id, tiitle, date
+    _todos = [ ];
 
+    @observable
+    _todo = { }; // id, tiitle, date
+
+    @computed 
     get todo(){
-        return this._todo;
+        // return this._todo;
+        return toJS(this._todo);
+    }
+
+    @computed
+    get todos(){
+        // return this._todos ? this._todos.slice() : [];
+        return toJS(this._todos);
     }
 
     @action
@@ -21,6 +30,16 @@ class TodoStore {
             ...this._todo, // 전개 연산자
             [name] : value
         }
+    }
+
+    @action
+    addTodo(todo){
+        this._todos.push(todo);
+    }
+
+    @action
+    updateTodo(todo){
+        this._todos.find( (todo) => todo.id);
     }
 
 }
