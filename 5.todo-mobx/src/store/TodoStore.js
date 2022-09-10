@@ -12,6 +12,9 @@ class TodoStore {
     @observable
     _todo = { }; // id, tiitle, date
 
+    @observable
+    _searchText = '';
+
     @computed 
     get todo(){
         // return this._todo;
@@ -22,6 +25,16 @@ class TodoStore {
     get todos(){
         // return this._todos ? this._todos.slice() : [];
         return toJS(this._todos);
+    }
+
+    @computed
+    get searchText(){
+        return this._searchText;
+    }
+
+    @action
+    setSearchText(searchText){
+        this._searchText = searchText;
     }
 
     @action
