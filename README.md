@@ -38,6 +38,12 @@ namoosori-react 강좌 전체 코스
 
 npm install -g yarn
 
+npm -v
+
+node -v
+
+yarn -v
+
 yarn create react-app hello-react
 yarn create react-app 1.props-exam
 yarn create react-app simple-counter
@@ -45,12 +51,11 @@ yarn create react-app 2.state-templete
 yarn create react-app 3.lifecycle-exam
 yarn create react-app 4.counter-mobx
 yarn create react-app 5.todo-mobx
+yarn create react-app 6.router-exam
 
 yarn start
 
 yarn add @material-ui/core
-
-
 
 VS Code experimentalDecorators check
 
