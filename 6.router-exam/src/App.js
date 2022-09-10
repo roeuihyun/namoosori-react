@@ -14,8 +14,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Main}></Route>
           <Route exact path='/about' component={About}></Route>
-          <Route exact path='/lessons' component={Lessons}></Route>
-          <Route component={ () => <h2>Not Found!</h2>}></Route>
+          <Route path='/lessons' component={Lessons}></Route>
         </Switch>
       </div>
     );

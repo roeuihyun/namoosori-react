@@ -32,7 +32,7 @@ namoosori-react 강좌 전체 코스
 리액트 + 몹엑스 기초 강의 - 6-8강 Todo-List 예제 실습(4)
 리액트 + 몹엑스 기초 강의 - 6-9강 Todo-List 예제 실습(5)
 
-리액트 + 몹엑스 기초 강의 - 7-1깅 React-Router
+리액트 + 몹엑스 기초 강의 - 7-1강 React-Router
 리액트 + 몹엑스 기초 강의 - 7-2강 React-Router 실습(1)
 리액트 + 몹엑스 기초 강의 - 7-3강 React-Router 실습(2)
 
