@@ -8,11 +8,19 @@ class TodoStore {
 
     @observable
     _todo = { 
-        title : 'test',
+        
      } // id, tiitle, date
 
     get todo(){
         return this._todo;
+    }
+
+    @action
+    setTodoProps(name, value){
+        this._todo = {
+            ...this._todo, // 전개 연산자
+            [name] : value
+        }
     }
 
 }
