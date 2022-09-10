@@ -11,7 +11,7 @@ class TodoEditFormView extends PureComponent {
   render(){
 
     const selectedDate = new Date();
-
+    const { todo } = this.props;
     return(
       <form noValidate>
         <Grid container xs={12} spacing={3}>
@@ -20,7 +20,9 @@ class TodoEditFormView extends PureComponent {
               margin="normal"
               id="outlined-basic" 
               label="Title" 
-              variant="standard" />
+              variant="standard" 
+              value={ todo.title }
+              />
           </Grid>
           <Grid item xs={3}>
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
